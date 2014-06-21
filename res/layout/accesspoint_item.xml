@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/itemImage_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/wifi_accesspoint_selected"
+        android:visibility="invisible" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/apName"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/itemImage_01"
+        android:textColor="@android:color/white"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="22dp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/itemImage_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/itemImage_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/itemImage_02" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/itemImage_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/itemImage_03"
+        android:src="@drawable/lock" >
+    </ImageView>
+
+</RelativeLayout>

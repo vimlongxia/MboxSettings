@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_main_bk"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/settings_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        layout="@layout/settings_top" />
+
+    <include
+        android:id="@+id/settingsContent01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_top_layout"
+        layout="@layout/settings_content_01"
+        android:visibility="visible" >
+    </include>
+
+    <include
+        android:id="@+id/settingsContent02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_top_layout"
+        layout="@layout/settings_context_02"
+        android:visibility="gone" >
+    </include>
+
+    <include
+        android:id="@+id/settingsContent03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_top_layout"
+        layout="@layout/settings_context_03"
+        android:visibility="gone" >
+    </include>
+
+    <include
+        android:id="@+id/settingsContent04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_top_layout"
+        layout="@layout/settings_context_04"
+        android:visibility="gone" >
+    </include>
+
+    <include
+        android:id="@+id/settings_content_postion"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/settings_top_layout"
+        layout="@layout/position_adjust"
+        android:visibility="gone" >
+    </include>
+
+    <ImageView
+        android:id="@+id/screen_adjust_line"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/bian"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

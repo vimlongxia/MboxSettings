@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language_tip"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <GridView
+            android:id="@+id/language_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="top|center_horizontal" >
+
+        <Button
+            android:id="@+id/button_language_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bottom"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/button_previous"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/button_language_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bottom"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/button_next"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+</LinearLayout>

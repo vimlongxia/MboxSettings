@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oobe_bk"
+    android:orientation="vertical"
+    tools:context=".OobeActivity" >
+
+    <FrameLayout
+        android:id="@+id/oobe_title"
+        android:layout_width="fill_parent"
+        android:layout_height="235dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginRight="120dp"
+        android:gravity="bottom|center" >
+
+        <LinearLayout
+            android:id="@+id/top_welcome"
+            android:layout_width="310dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="25dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/top_welcome_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_top_welcome"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/top_welcome_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_top_welcome"
+                    android:gravity="center"
+                    android:text="@string/oobe_welcome"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_language"
+            android:layout_width="310dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="235dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="25dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/top_language_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_top_language"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/top_language_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_top_language"
+                    android:gravity="center"
+                    android:text="@string/oobe_language"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_network"
+            android:layout_width="310dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="470dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="25dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/top_network_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_top_network"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/top_network_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/image_network_setting"
+                    android:gravity="center"
+                    android:text="@string/oobe_net"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_screen"
+            android:layout_width="310dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="475dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="25dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/top_screen_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_top_screen"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/top_screen_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_top_screen"
+                    android:gravity="center"
+                    android:text="@string/oobe_screenadjust"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+    <include
+        android:id="@+id/oobe_language"
+        android:layout_width="fill_parent"
+        android:layout_height="445dp"
+        android:layout_below="@id/oobe_title"
+        layout="@layout/oobe_language"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/oobe_net"
+        android:layout_width="fill_parent"
+        android:layout_height="445dp"
+        android:layout_marginTop="180dp"
+        layout="@layout/oobe_net"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/oobe_screenadjust"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="160dp"
+        layout="@layout/oobe_screenadjust"
+        android:visibility="gone" />
+    
+        <include
+        android:id="@+id/oobe_welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="445dp"
+        android:layout_below="@id/oobe_title"
+        layout="@layout/oobe_welcome" />
+
+    <ImageView
+        android:id="@+id/oobe_screen_adjust_line"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bian"
+        android:visibility="gone" />
+
+</RelativeLayout>

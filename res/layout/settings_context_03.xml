@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/settingsContentLayout_03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/wifi_direct"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:background="@drawable/setlect_white_focus"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusLeft="@id/wifi_direct"
+                android:nextFocusRight="@id/wifi_direct"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:id="@+id/miracast"
+                    android:layout_width="400dp"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="100dp"
+                    
+                    android:gravity="center_vertical"
+                    android:text="@string/expert_wifi_direct"
+                    android:textColor="@android:color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/miracast_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:id="@+id/dlna"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:layout_marginRight="500dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/dlna"
+            android:nextFocusRight="@id/dlna"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/on"
+                android:gravity="center_vertical"
+                android:text="@string/expert_dlna"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/remote_control"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:background="@drawable/setlect_white_focus"
+                android:clickable="true"
+                android:focusable="true"
+                android:nextFocusLeft="@id/remote_control"
+                android:nextFocusRight="@id/remote_control"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:id="@+id/remoteControl"
+                    android:layout_width="400dp"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="100dp"
+                    android:drawableRight="@drawable/off"
+                    android:gravity="center_vertical"
+                    android:text="@string/expert_remote_control"
+                    android:textColor="@android:color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/remoteControl_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+			
+
+        <LinearLayout
+            android:id="@+id/cec_control"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:layout_marginRight="500dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/cec_control"
+            android:nextFocusRight="@id/cec_control"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/cec_control"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/city_select"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:layout_marginRight="500dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/city_select"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/province"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:clickable="true"
+            	android:focusable="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/province"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:clickable="true"
+            	android:focusable="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/city"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/request_screen"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:layout_marginRight="500dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/request_screen"
+            android:nextFocusRight="@id/request_screen"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/requestScreen"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/ic_uncheck"
+                android:gravity="center_vertical"
+                android:text="@string/change_screen_request"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keep_screen_land"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:layout_marginRight="500dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/keep_screen_land"
+            android:nextFocusRight="@id/keep_screen_land"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/screen_land"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/ic_uncheck"
+                android:gravity="center_vertical"
+                android:text="@string/keep_screen_land"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/voice_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:layout_marginRight="500dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/voice_setting"
+            android:nextFocusRight="@id/voice_setting"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/voice_setting"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

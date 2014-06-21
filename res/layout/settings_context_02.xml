@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/settingsContentLayout_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/secreen_auto"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="380dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/secreen_auto"
+            android:nextFocusRight="@id/secreen_auto"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/auto_set_screen"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/on"
+                android:gravity="center_vertical"
+                android:text="@string/display_auto"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_self_set"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="380dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/screen_self_set"
+            android:nextFocusRight="@id/screen_self_set"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/self_select_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/display_self_setting"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/current_mode_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/display_self_setting_value"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cvbs_screen_self_set"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="380dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/screen_self_set"
+            android:nextFocusRight="@id/screen_self_set"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/cvbs_self_select_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/cvbs_setting"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cvbs_current_mode_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/cvbs_480"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_hide_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="380dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/screen_hide_bar"
+            android:nextFocusRight="@id/screen_hide_bar"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/hide_status_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/off"
+                android:gravity="center_vertical"
+                android:text="@string/hide_staus_bar"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_scrren_adjust"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="380dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@id/button_scrren_adjust"
+            android:nextFocusRight="@id/button_scrren_adjust"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/screen_adjust"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen_keep"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="380dp"
+            android:background="@drawable/setlect_white_focus"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/screen_time_0"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/screen_keep"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/screen_time_01"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:drawableRight="@drawable/ic_checked"
+                android:gravity="center_vertical"
+                android:text="@string/screen_close"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:clickable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/screen_time_02"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:drawableRight="@drawable/ic_uncheck"
+                android:gravity="center_vertical"
+                android:text="@string/time_4"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:clickable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/screen_time_03"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:drawableRight="@drawable/ic_uncheck"
+                android:gravity="center_vertical"
+                android:text="@string/time_8"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:clickable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/screen_time_04"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:drawableRight="@drawable/ic_uncheck"
+                android:gravity="center_vertical"
+                android:text="@string/time_12"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:clickable="true"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
